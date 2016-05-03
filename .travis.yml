@@ -1,0 +1,30 @@
+language: r
+cache: packages
+
+r:
+    - release
+    - devel
+
+os: linux
+
+r_packages:
+    - rmarkdown
+
+bioc_required: true
+
+bioc_use_devel: true
+
+#r_github_packages:
+    #- jimhester/covr
+
+#after_success:
+    #- Rscript -e 'covr::coveralls()'
+
+notifications:
+  email:
+    recipients:
+      - jacobcvt12@gmail.com
+      - rscharpf@jhu.edu      
+    on_success: never
+    on_failure: change
+  slack: cnpbayes:XaLGAwFtX5BavaWHpB4GMUKj
