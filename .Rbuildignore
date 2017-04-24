@@ -1,0 +1,12 @@
+.gitignore
+^data-raw$
+^\.travis\.yml$
+.git/*
+.*\.DS_Store
+.*\.swp
+.*\*.Rprofile
+.*\*.Rhistory
+.*\*.o
+^appveyor\.yml$
+^Makefile$
+^CONTRIBUTING.md$
